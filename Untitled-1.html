@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<script src="jquery-3.7.1.min.js"></script>
+<title>無標題文件</title>
+	
+	<script>
+		$(document).ready(function() {
+			var wordsize;
+    
+        $('#red_btn').click(function(){
+            $('body').css({ "background-color":"red"});  
+      
+        });
+		$('#green_btn').click(function(){
+            $('body').css({ "background-color":"green"});  
+      
+        });
+			
+		$('#blue_btn').click(function(){
+            $('body').css({ "background-color":"blue"});  
+      
+        });
+			
+		$('#pic1').click(function(){
+            $('body').css({ "background-image":"url(images/01.jpg)"}); 
+			$('#textSize').css({ "color":"black"});
+      
+        });
+		$('#pic2').click(function(){
+            $('body').css({"background-image":"url(images/02.jpg)"}); 
+			$("#textSize").css({ "color":"red"});
+      
+        });
+			
+		$('#pic3').click(function(){
+            $('body').css({ "background-image":"url(images/03.jpg)"}); 
+			$('#textSize').css({ "color":"red"});
+      
+        });
+			 $('#t1').on('change', function () {
+			wordsize=	$('#t1').val(); 
+        $('#textSize').css({
+          'font-size': wordsize + 'px'
+        });
+      });
+			
+			
+
+        
+});
+
+  </script>
+	<style>
+		@keyframes animat {
+			0%{margin-top:0px; margin-left: 0px; background: #FF0004;  }
+			50%{margin-top:0px; margin-left: 100px; width: 250px; background: #8100FF; }
+			100%{margin-top:0px; margin-left:200px; width: 400px; background: #00FF15; }
+		}
+		.bbb{
+			width: 100px;
+			height:100px;
+			background: #FF0004;
+			animation: animat 2s ;
+			animation-iteration-count: 5;
+
+		}
+		.abc{
+			
+			width: 100px;
+			height:100px;
+			background: #FF0004;
+			
+		}
+		.abc:hover{
+			background: #002CFF;
+			height:200px;
+			width: 200px;
+			transition: background 2s, height 2s,width 2s;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="button" value="red" id="red_btn"><br>
+	<input type="button" value="green" id="green_btn"><br>
+	<input type="button" value="blue" id="blue_btn"><br>
+	<input type="button" value="pic1" id="pic1"><br>
+	<input type="button" value="pic2" id="pic2"><br>
+	<input type="button" value="pic3" id="pic3"><br>
+	<input type="range" id="t1" value="16" min="12" max="30">
+	<div id="textSize" style="font-size:16px; width:90%; margin: 20px auto; border:1px solid #000; color: #8A2D2F"><b>宴桃園豪傑三結義，斬黃巾英雄首立功</b><br>
+		 滾滾長江東逝水,浪花淘盡英雄。是非成敗轉頭空：青山依舊在,幾度夕陽紅。白髮漁樵江渚上,慣看秋月春風。一壺濁酒喜相逢：古今多少事,都付笑談中。話說天下大勢．分久必合，合久必分：周末七國分爭，并入於秦。及秦滅之後，楚、漢分爭，又并入於漢。漢朝自高祖斬白蛇而起義，一統天下。後來光武中興，傳至獻帝，遂分為三國。推其致亂之由，殆始於桓、靈二帝。桓帝禁錮善類，崇信宦官。及桓帝崩，靈帝即位，大將軍竇武、太傅陳蕃，共相輔佐。時有宦官曹節等弄權，竇武、陳蕃謀誅之，作事不密，反為所害。中涓自此愈橫。建寧二年四月望日，帝御溫德殿。方陞座，殿角狂風驟起，只見一條大青蛇，從梁上飛將下來，蟠於椅上。帝驚倒，左右急救入宮，百官俱奔避。須臾，蛇不見了。忽然大雷大雨，加以冰雹，落到半夜方止，壞卻房屋無數。建寧四年二月，洛陽地震；又海水泛溢，沿海居民，盡被大浪捲入海中。光和元年，雌雞化雄。六月朔，黑氣十餘丈，飛入溫德殿中。秋七月，有虹見於玉堂；五原山岸，盡皆崩裂。種種不祥，非止一端。帝下詔問群臣以災異之由，議郎蔡邕上疏，以為蜺墮雞化，乃婦寺干政之所致，言頗切直。帝覽奏歎息，因起更衣。曹節在後竊視，悉宣告左右‧遂以他事陷邕於罪，放歸田里。後張讓，趙忠，封諝，段珪，曹節，候覽，蹇碩，程曠，夏惲，郭勝十人朋比為奸，號為「十常侍」。帝尊信張讓，呼為「阿父」，朝政日非，以致天下人心思亂，盜賊蜂起。時鉅鹿郡有兄弟三人：一名張角，一名張寶，一名張梁。那張角本是個不第秀才。因入山採藥，遇一老人，碧眼童顏，手執藜杖，喚角至一洞中，以天書三卷授之，曰：「此名太平要術。汝得之，當代天宣化，普救世人；若萌異心，必獲惡報。」角拜問姓名。老人曰：「吾乃南華老仙也。」言訖，化陣清風而去。角得此書，曉夜攻習，能呼風喚雨，號為太平道人。中平元年正月內，疫氣流行，張角散施符水，為人治病，自稱大賢良師。角有徒弟五百餘人，雲游四方，皆能書符念咒。次後徒眾日多，角乃立三十六方，─大方萬餘人，小方六七千─，各立渠帥，稱為將軍。訛言「蒼天已死，黃天當立。」又云「歲在甲子，天下大吉。」令人各以白土，書「甲子」二字於家中大門上。青、幽、徐、冀、荊、揚、兗、豫八州之人，家家侍奉大賢良師張角名字。角遣其黨馬元義，暗齎金帛，結交中涓封諝，以為內應。角與二弟商議曰：「至難得者，民心也。今民心已順，若不乘勢取天下，誠為可惜。」遂一面私造黃旗，約期舉事；一面使弟子唐州，馳書報封諝。唐州乃逕赴省中告變。帝召大將軍何進調兵擒馬元義，斬之；次收封諝等一干人下獄。
+    
+		</div>
+<div class="abc"></div><br>
+	<div class="bbb"></div>
+</body>
+</html>
